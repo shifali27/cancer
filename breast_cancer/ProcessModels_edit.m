@@ -118,7 +118,7 @@ end
 %      =12 for SEARB, 
 %      =16 for Peru
 %      =17 for Caribbean
-I = 17;
+I = 16;
     Countries{I}
     ind=find(strcmp(RAW_D(:,1),Countries{I}));
     DATA=RAW_D(ind,6);
@@ -505,7 +505,7 @@ function [lTEMPLATE]=WriteTemplate(RES,TEMPLATE)
     lTEMPLATE{ R{I1_Screen,1}+I_f-1 ,R{I1_Screen,5} }=100*1/2*0.9;
     lTEMPLATE{ R{I1_Screen,1}+I_f-1 ,R{I1_Screen,6} }=100*1/2*0.9;
     end
-
+     % bibi
     %Bi annual screening of 40-69, age match not perfect
     lTEMPLATE{ R{I2_Screen,1}+I_f-1 ,R{I2_Screen,3} }=100*0/2*0.9;
     lTEMPLATE{ R{I2_Screen,1}+I_f-1 ,R{I2_Screen,4} }=100*0/2*0.9;
@@ -517,7 +517,7 @@ function [lTEMPLATE]=WriteTemplate(RES,TEMPLATE)
     lTEMPLATE{ R{I2_Screen,1}+I_f-1 ,R{I2_Screen,5} }=100*1/2*0.9;
     lTEMPLATE{ R{I2_Screen,1}+I_f-1 ,R{I2_Screen,6} }=100*1/2*0.9;
     end
-
+       % skajd
     %Screening-by clinical exam
     lTEMPLATE{ R{I3_Screen,1}+I_f-1 ,R{I3_Screen,3} }=100*0/2*0.35;
     lTEMPLATE{ R{I3_Screen,1}+I_f-1 ,R{I3_Screen,4} }=100*0/2*0.35;
